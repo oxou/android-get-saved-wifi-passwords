@@ -41,3 +41,44 @@ wget "https://raw.githubusercontent.com/oxou/android-get-saved-wifi-passwords/ma
 chmod +x run.sh
 sh run.sh
 ```
+
+You should get an output like this (if you have any passwords saved):
+
+```
+================================================================================
+= Copyright (C) 2023 Nurudin Imsirovic <github.com/oxou>                       =
+= List saved Wi-Fi passwords on a rooted Android Device                        =
+= GitHub Repository: https://github.com/oxou/android-get-saved-wi-fi-passwords =
+=                                                          Version: 2023-07-16 =
+================================================================================
+Info: All system commands available
+Info: Searching for the 'WifiConfigStore.xml' file ...
+Info: 'WifiConfigStore.xml' found !
+Info: Checking file size...
+Info: 'WifiConfigStore.xml' size is 29551
+Info: Verifying file contents...
+Info: Verifying file contents... Found XML header
+Info: Verifying file contents... Found <WifiConfiguration>
+Info: Verifying file contents... Found <string name="ConfigKey"
+Info: Verifying file contents... Found <string name="PreSharedKey"
+Info: Verification finished successfully
+Info: Parsing the file and writing the results into the buffer ...
+Info: Parsing finished.
+Info: Found 5 passwords
+
+===============================
+
+  SSID: [REDACTED]
+
+  KEY:  [REDACTED]
+
+===============================
+
+  SSID: [REDACTED]
+
+  KEY:  [REDACTED]
+
+===============================
+
+...
+```
