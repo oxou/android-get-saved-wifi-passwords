@@ -21,7 +21,7 @@ user could read or write to system-protected files on an Android device.
 I will not go into more details regarding this topic, and I won't be
 responsible if you brick your device and lose warranty in the process.
 
-Your device is also your sole responsibility, and no bodies else.
+Your device is also your sole responsibility, and nobody's else.
 
 ## How to use it?
 
