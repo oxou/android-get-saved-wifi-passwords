@@ -37,7 +37,7 @@ Run the commands:
 ```
 su
 cd /data/local/tmp
-wget {url_here} -O out
-chmod +x out
-./out
+wget "https://raw.githubusercontent.com/oxou/android-get-saved-wifi-passwords/main/run.sh"
+chmod +x run.sh
+sh run.sh
 ```

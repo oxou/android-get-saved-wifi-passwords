@@ -13,7 +13,7 @@
 # - which
 #
 # Created: 2023-07-16 01:43 PM
-# Updated: 2023-07-16 05:53 PM
+# Updated: 2023-07-16 05:59 PM
 
 # Detect that the script is being ran in Termux
 IS_TERMUX=0
@@ -86,7 +86,12 @@ odd_error() {
 # Exit because user is not root
 if [ ! "$(id -u)" = "0" ]; then
     msg_error "This tool requires root privileges"
-    msg_info "Use this command: sudo -E sh $0"
+    msg_info "Use these commands"
+    msg_info "  Termux:"
+    msg_info "    sudo -E sh $0"
+    msg_info ""
+    msg_info "  ADB Shell:"
+    msg_info "    su -m -c sh $0"
     exit 1
 fi
 
